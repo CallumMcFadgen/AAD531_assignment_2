@@ -1,64 +1,126 @@
 <!DOCTYPE HTML>
-<html  lang="en">
-
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Callum McFadgen">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>About | Fansite name</title>
+        <link rel="stylesheet" type="text/css" href="css/breakpoint.css">
+        <title>About | Feijoa Life</title>
     </head>
 
-    <body>
-        <div id="wrapper">
-            
-            <header>
-                <h1>Fansite name</h1>
-                <p>Short description or tagline of your Fansite so people know it's not an offical celebrity page.</p>
-                <nav>
-                    <ul>
-                        <!-- NOTE: using diffrent nav URLS during dev, may need to be updated. -->
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Other</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <header>
+        <div class="logo">
+            <div>
+                <a href="index.html">
+                    <p>Feijoa <span>Life</span></p>
+                </a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="social-media">
+                <div>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="nav">
+                <div>
+                    <a href="index.html">Home</a>
+                    <a class="active" href="about.html">About</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="growing.html">Growing</a>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-            <section>
-                <article>
-                    <header>
-                        <h2>About page</h2>
-                        <p>A short description about this about page</p>
-                    </header>
-
-                </article>	
-            </section>
-        
-            <section>
-                <article>
-                    <header>
-                        <h2>Content</h2>
-                        <p>Intro content</p>
-                    </header>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JhvWmlynv6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo elit, placerat ut fringilla sodales, tempor ac tortor. Sed mollis non neque quis blandit. Nam sit amet imperdiet risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam auctor ligula sed semper mattis. Quisque volutpat tortor at scelerisque placerat. Fusce efficitur justo eget sem dictum dignissim. Curabitur risus risus, tristique vel porta a, lacinia eu velit. Duis vehicula justo sit amet ipsum condimentum pulvinar. Sed sapien nibh, fringilla in ipsum ut, varius suscipit eros. Morbi varius ultricies accumsan. Mauris nunc massa, molestie a libero vitae, vehicula condimentum quam. Praesent sit amet lorem fermentum, elementum augue vel, ultrices libero.</p>
-                    <p>Suspendisse venenatis lacinia vestibulum. Duis at euismod arcu. Morbi dictum velit ex, vehicula tristique ligula vehicula ut. Duis purus risus, pellentesque eget diam nec, gravida mattis dui. Donec aliquet magna ut auctor posuere. Duis vel augue convallis, placerat tellus sed, lobortis felis. Aliquam sed magna eu dui aliquet mollis. Vestibulum sit amet ipsum eget elit scelerisque egestas. Curabitur lobortis metus eget dignissim feugiat. Duis tristique sodales neque non rhoncus.</p>
-                    <p>Vestibulum placerat pharetra lorem sed sagittis. Vestibulum lectus mi, auctor convallis orci ut, dignissim mollis augue. Pellentesque bibendum luctus sapien. Proin mattis, mauris non fermentum lobortis, mi massa gravida quam, nec ornare ex purus non leo. Donec a lectus suscipit, feugiat tortor in, pulvinar leo. Donec venenatis orci eget fringilla porta. Ut finibus eros non magna accumsan feugiat.</p>
-                    <p>Aliquam eleifend velit sit amet dictum vehicula. Integer vel augue vitae libero pulvinar laoreet. Suspendisse nec urna diam. Donec interdum aliquam diam, quis venenatis lectus commodo non. Aliquam in ultrices odio, et aliquam dui. Vivamus tempor arcu nec magna ornare ullamcorper. Duis bibendum sapien sed est lobortis interdum.</p>
-                </article>
+            <section class="heading">
+                <h1>About</h1>
             </section>
 
             <aside>
-                <h2>A sidebar title</h2>
-                <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <article class="search">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                </article>
+                <article>
+                    <h4>About</h4>
+                    <div>
+                        <a href="#what-is-feijoa-life">What is Feijoa Life?</a>
+                    </div>
+                    <div>
+                        <a href="#what">What are they?</a>
+                    </div>
+                    <div>
+                        <a href="#why">Title</a>
+                    </div>
+                    <div>
+                        <a href="#why">Title</a>
+                    </div>
+                </article>
             </aside>
 
+            <section class="content-part-width">
+
+                <article id="what-is-feijoa-life">
+                    <h2>What is Feijoa Life?</h2>
+                    <img class="left-image" src="images/about-main.jpg"/>
+                    <p>Feijoa life is a place where those of us who love New Zealands iconic autumn fruit can gather and share ideas, recipes, growing tips and news.</p>
+                </article>
+
+
+                <article id="what">
+                    <h2>What are they?</h2>
+                    <img class="left-image" src="images/about-main.jpg"/>
+                    <p>A slightly longer description of your fansite and perhaps the reasons for its existence.</p>
+                </article>
+
+
+                <article id="about-article-3">
+                    <h2>Why Feijoas?</h2>
+                    <img class="left-image" src="images/about-main.jpg"/>
+                    <p>A slightly longer description of your fansite and perhaps the reasons for its existence.</p>
+                </article>
+
+
+                <article id="about-article-4">
+                    <h2>Why Feijoas?</h2>
+                    <img class="left-image" src="images/about-main.jpg"/>
+                    <p>A slightly longer description of your fansite and perhaps the reasons for its existence.</p>
+                </article>
+
+
+            </section>
+
             <footer>
-                <p>Copyright &#169; Fansite name 1991</p>
+                <div class="footer-nav">
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div>
+                        <a href="recipes.html">Recipes</a>
+                        <a href="growing.html">Growing</a>
+                    </div>
+                    <div>
+                        <a href="news.html">News</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <p>© Copyright 2021 &nbsp;&nbsp; | &nbsp;&nbsp; Feijoa Life &nbsp;&nbsp; | &nbsp;&nbsp; All Rights Reserved &nbsp;&nbsp; | &nbsp;&nbsp; Developed by C McFadgen</p>
             </footer>
         </div>
     </body>
-
 </html>

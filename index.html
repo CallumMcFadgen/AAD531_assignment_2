@@ -5,53 +5,89 @@
         <meta charset="UTF-8">
         <meta name="author" content="Callum McFadgen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- <img src="../images/splash-avatar.jpg" height="150px" width="150px" /> -->
-        <!-- <a href="home.html">Yes, I'm over 18</a> -->
-        <!-- <a href="https://www.alcohol.org.nz/">No, Im under 18</a> -->
-        <title>Home | Fansite name</title>
+        <link rel="stylesheet" type="text/css" href="css/breakpoint.css">
+        <title>Home | Feijoa Life</title>
     </head>
 
     <body>
         <div id="wrapper">
-            
             <header>
-                <h1>Fansite name</h1>
-                <p>Short description or tagline of your fansite so people know it's not an official celebrity page.</p>
-                <nav>
-                    <ul>
-                        <!-- NOTE: using diffrent nav URLS during dev, may need to be updated. -->
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Other</a></li>
-                    </ul>
-                </nav>
+                <div class="logo">
+                    <div>
+                        <a href="index.html">
+                            <p>Feijoa <span>Life</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="social-media">
+                        <div>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <div>
+                            <a class="active" href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="recipes.html">Recipes</a>
+                            <a href="growing.html">Growing</a>
+                            <a href="news.html">News</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </header>
-
-            <section>
+            <section class="heading-home">
+                <h1>Welcome</h1>
+                <p>Fejoa Life is your <span>#1</span> source of everything Feijoa</p>
+            </section>
+            <section class="content-full-width">
                 <article>
-                    <header>
-                        <h2>Welcome, Kia ora, Aloha, Guten Tag, Bonjour... ect!</h2>
-                        <p>Perhaps a quote or memorable buzz word from the celebrity you've chosen to use.</p>
-                    </header>
-                    <img src="images/home-image.jpg"/>
-                    <p>A slightly longer description of your fansite and perhaps the reasons for its existence.</p>
+                    <h2>About us</h2>
+                    <img src="images/home-about-image.png"/>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>Click <a href="about.html">here</a> to learn more.</p>
+                </article>
+                <article>
+                    <h2>Recipie</h2>
+                    <img src="images/home-about-image.png"/>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>Click <a href="about.html">here</a> to learn more.</p>
+                </article>
+                <article>
+                    <h2>Growing tip</h2>
+                    <img src="images/home-about-image.png"/>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>Click <a href="about.html">here</a> to learn more.</p>
                 </article>
             </section>
-
-            <aside>
-                <h2>A sidebar title</h2>
-                <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            </aside>
-
             <footer>
-                <p>Copyright &#169; fansite name 1991</p>
+                <div class="footer-nav">
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div>
+                        <a href="recipes.html">Recipes</a>
+                        <a href="growing.html">Growing</a>
+                    </div>
+                    <div>
+                        <a href="news.html">News</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <p>© Copyright 2021 &nbsp;&nbsp; | &nbsp;&nbsp; Feijoa Life &nbsp;&nbsp; | &nbsp;&nbsp; All Rights Reserved &nbsp;&nbsp; | &nbsp;&nbsp; Developed by C McFadgen</p>
             </footer>
-
         </div>
     </body>
+
 </html>
