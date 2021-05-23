@@ -17,7 +17,7 @@ header {
     width: 100%;
     max-width: 100%;
     display: flex;
-    height: 15vh;
+    height: 12vh;
 }
 
 .logo {
@@ -41,7 +41,7 @@ header {
     font-family: 'Carter One', Arial;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size:3em;
+    font-size:2.75em;
     color: #ffffff;
     font-weight: 400;
 }
@@ -119,75 +119,98 @@ header {
     text-decoration: underline;
 }
 
-.heading-home {
-    margin: 3vh auto 0 auto;
+.home-heading {
+    margin: 0vh auto 0 auto;
+    text-align:center;
+    position: relative;
+    height: 100vh;
+    background: #000000;
+    border-bottom: 1px #1F3D19 solid;
+}
+
+.home-heading img {
+    opacity: 0.95;
+    width: 100%;
+    height:100%
+}
+
+.home-heading h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
     width: 80%;
-    padding: 6vh 0vw 6vh 0vw;
-    background: url('/images/home-heading.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    font-size: 7em;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.home-subheading {
+    color: #1F3D19;
+    font-size: 1.25em;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.home-article .image-wrapper{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    width: 100%;
+}
+
+.home-article img {
+    margin: 2%;
+    max-width: 31%;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
 }
 
-.heading-home h1{
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    font-size: 8em;
-    font-weight: 700;
-    text-shadow: 1px -1px 0 #1F3D19, 1px -1px 0 #1F3D19, -1px 1px 0 #1F3D19, 1px 1px 0 #1F3D19;
-    margin-bottom: 3vh;
-}
-
-.heading-home p{
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    width: 90%;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 400;
-    text-shadow: 1px -1px 0 #1F3D19, 1px -1px 0 #1F3D19, -1px 1px 0 #1F3D19, 1px 1px 0 #1F3D19;
-}
-
-.heading-home p span{
-    padding: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Carter One', Arial;
-    color: #ffffff;
-    width: 90%;
-    text-align: center;
+.home-article p {
     font-size: 1.25em;
-    font-weight: 400;
-    text-shadow: 1px -1px 0 #1F3D19, 1px -1px 0 #1F3D19, -1px 1px 0 #1F3D19, 1px 1px 0 #1F3D19;
+    font-family: 'Montserrat', Helvetica;
+    line-height: 140%;
+}
+
+.home-info{
+    text-align: center;
+    color: #1F3D19;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-top:3vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .heading {
-    margin: 3vh auto 0 auto;
-    width: 80%;
-    background: url('/images/home-heading.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 3vh 0vw 3vh 0vw;
-    border: 1px #1F3D19 solid;
-    border-radius: 4px;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    text-align:center;
+    position: relative;
+    height: 20vh;
+    background: #000000;
+    border-bottom: 1px #1F3D19 solid;
 }
 
-.heading h1{
+.heading img {
+    opacity: 0.95;
+    width: 100%;
+    height:100%
+}
+
+.heading h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     width: 100%;
-    text-align: center;
-    font-size: 7em;
+    font-size: 6em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     font-weight: 600;
-    text-shadow: 1px -1px 0 #1F3D19, 1px -1px 0 #1F3D19, -1px 1px 0 #1F3D19, 1px 1px 0 #1F3D19;
 }
 
 .content-full-width {
@@ -199,7 +222,7 @@ header {
     font-family: 'Montserrat', Helvetica;
     background-color: #98C280;
     margin: 3vh 2% 2.5vh 0vw;
-    padding: 3vh 2.5vw 3vh 2.5vw;
+    padding: 3vh 3.5vw 3vh 3.5vw;
     overflow: auto;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
@@ -210,34 +233,14 @@ header {
     text-align: center;
     font-size: 2.25em;
     font-weight: 800;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     font-family: 'Open Sans', sans-serif;
-}
-
-.content-full-width article img {
-    margin-right: 1.5vw;
-    margin-bottom: 1vh;
-    max-width: 50%;
-    height: auto;
-    float: left;
-    border: 1px #1F3D19 solid;
-    border-radius: 4px;
-}
-
-.content-full-width p {
-    font-size: 1.25em;
-    font-family: 'Montserrat', Helvetica;
-    margin-bottom: 3vh;
 }
 
 .content-full-width p:last-child {
     font-size: 1.1em;
-    font-family: 'Montserrat', Helvetica;
     margin-bottom: 1vh;
 }
-
-.content-full-width a {
-    font-family: 'Montserrat', Helvetica;}
 
 aside {
     margin-left: 10%;
@@ -249,7 +252,7 @@ aside {
 aside article {
     margin: 3vh 2% 2.5vh 0vw;
     background-color: #98C280;
-    padding: 3vh 2.5vw 3vh 2.5vw;
+    padding: 3.5vh 3.5vw 3.5vh 3.5vw;
     overflow: auto;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
@@ -302,6 +305,7 @@ aside article div a {
 }
 
 aside article p {
+    line-height: 140%;
     margin-bottom: 3vh;
     text-align: right;
     font-size: 1.1em;
@@ -318,10 +322,10 @@ aside article p {
 }
 
 .content-part-width article {
-    font-family: 'Montserrat', Helvetica;    
+    font-family: 'Montserrat', Helvetica;
     background-color: #98C280;
     margin: 3vh 0vw 2.5vh 2%;
-    padding: 3vh 2vw 3vh 2vw;
+    padding: 3.5vh 3.5vw 3.5vh 3.5vw;
     overflow: auto;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
@@ -338,7 +342,7 @@ aside article p {
 
 }
 
-.content-part-width .subheading {
+.subheading {
     color: #1F3D19;
     font-size: 1.25em;
     font-weight: 600;
@@ -355,20 +359,20 @@ aside article p {
     border-radius: 4px;
 }
 
-.content-part-width .left-image {
+.left-image {
     margin-right: 1.5vw;
     margin-bottom: 2vh;
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     float: left;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
 }
 
-.content-part-width .right-image {
+.right-image {
     margin-left: 1.5vw;
     margin-bottom: 2vh;
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     float: right;
     border: 1px #1F3D19 solid;
@@ -378,13 +382,14 @@ aside article p {
 .content-part-width .video {
     margin-right: 1.5vw;
     margin-bottom: 3vh;
-    width: 100%; 
+    width: 100%;
     height: 50vh;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
 }
 
 .content-part-width p {
+    line-height: 140%;
     font-size: 1.1em;
     font-family: 'Montserrat', Helvetica;
     margin-bottom: 3vh;
@@ -400,11 +405,13 @@ aside article p {
 }
 
 .content-part-width ol {
+    line-height: 140%;
     margin-bottom: 3vh;
     list-style-position: inside;
 }
 
 .content-part-width li {
+    line-height: 140%;
     font-size: 1.1em;
     font-family: 'Montserrat', Helvetica;
     margin-bottom: 2.5vh;
@@ -432,25 +439,27 @@ aside article p {
 .recipe .image-wrapper {
     text-align: center;
     overflow: auto;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
 }
 
 .recipe img {
-    max-width: 99.5%;
+    max-width: 99%;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
 }
 
 .recipe .ingredients {
+    margin-left: 3vw;
     float:left;
-    width: 49%;
-    margin-bottom: 1vh;
+    width: 40%;
+    margin-bottom: 2vh;
 }
 
 .recipe .method {
+    margin-right: 3vw;
     float: right;
-    width: 49%;
-    margin-bottom: 1vh;
+    width: 40%;
+    margin-bottom: 4vh;
 }
 
 .article-info{
@@ -458,7 +467,7 @@ aside article p {
     color: #1F3D19;
     font-size: 1.25em;
     font-weight: 600;
-    clear:both; 
+    clear:both;
     margin-bottom:3vh;
     font-family: 'Open Sans', sans-serif;
 }
@@ -503,25 +512,25 @@ aside article p {
 .contact button {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
     background: #1F3D19;
-    color: #53a016;
+    border: 1px #1F3D19 solid;
     padding: 1vh 0vw 1vh 0vw;
     width: 10vw;
     font-size: 1.25em;
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: none;
-    border: 1px #1F3D19 solid;
     border-radius: 4px;
     cursor: pointer;}
 .contact button:hover{
-    color: #1F3D19;
-    background: #53a016;
-    border: 1px #1F3D19 solid;
+    color: #53a016;
+    background: #1F3D19;
+    border: 1px #53a016 solid;
 }
 #submit-button:active{
-    color: #1F3D19;
-    background: #53a016;
-    border: 1px #1F3D19 solid;
+    color: #53a016;
+    background: #1F3D19;
+    border: 1px #53a016 solid;
 }
 
 .suscribe-form {
@@ -584,4 +593,3 @@ footer p{
     color: #ffffff;
     font-size: 0.9em;
 }
-  
