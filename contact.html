@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Callum McFadgen">
@@ -9,55 +8,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">         <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/breakpoint.css">
         <title>Contact | Feijoa Life</title>
     </head>
-
     <body>
+        <header>
+            <a class="logo" href="index.html">Feijoa Life</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="growing.html">Growing</a>
+                <a href="news.html">News</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </header>
         <div id="wrapper">
-            <header>
-                <div class="logo">
-                    <div>
-                        <a href="index.html">
-                            <p>Feijoa <span>Life</span></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="social-media">
-                        <div>
-                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
-                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="nav">
-                        <div>
-                            <a href="index.html">Home</a>
-                            <a href="about.html">About</a>
-                            <a href="recipes.html">Recipes</a>
-                            <a href="growing.html">Growing</a>
-                            <a href="news.html">News</a>
-                            <a class="active" href="contact.html">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
             <section class="heading">
                 <img src="images/heading-background.jpg" alt="feijoas">
                 <h1>Contact</h1>
             </section>
-
             <aside>
-                <article class="search">
+                <article class="side-search">
                     <form>
                         <input type="text" placeholder="Search.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
+                    </form>
                 </article>
                 <article>
                     <h4>Contact</h4>
@@ -69,11 +52,11 @@
                     </div>
                 </article>
             </aside>
-
             <section class="content-part-width">
                 <article id="contact-form">
                     <h2>Send a Message</h2>
-                    <form class="contact">
+                    <p>Want to get in touch? We would love to hear from you so dont hesitate to send us a message, especially if you have recipes, growing tips or feijoa news that you would like to share. you would like to share.</p>
+                    <form class="form">
                         <label>Email*</label>
                         <input type="email" required="true">
                         <label>Subject</label>
@@ -86,32 +69,30 @@
                 <article id="subscription-form">
                     <h2>Recive Updates</h2>
                     <p>Want to stay in the loop of all things feijoary? Then sign up now to receive all the latest news and updates from Feijoa Life as well as our weekly newsletter with featured recipes, growing tips and more.</p>
-                    <form class="contact">
+                    <form class="form">
                         <label>Email*</label>
                         <input type="email" required="true">
                         <button>Subscribe</button>
                     </form>
                 </article>
             </section>
-
-            <footer>
-                <div class="footer-nav">
-                    <div>
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                    </div>
-                    <div>
-                        <a href="recipes.html">Recipes</a>
-                        <a href="growing.html">Growing</a>
-                    </div>
-                    <div>
-                        <a href="news.html">News</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <p>© Copyright 2021 &nbsp;&nbsp; | &nbsp;&nbsp; Feijoa Life &nbsp;&nbsp; | &nbsp;&nbsp; All Rights Reserved &nbsp;&nbsp; | &nbsp;&nbsp; Developed by C McFadgen</p>
-            </footer>
         </div>
+        <footer>
+            <div class="footer-nav">
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="growing.html">Growing</a>
+                </div>
+                <div>
+                    <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <p>© Copyright 2021 &nbsp;&nbsp; | &nbsp;&nbsp; Feijoa Life &nbsp;&nbsp; | &nbsp;&nbsp; All Rights Reserved &nbsp;&nbsp; | &nbsp;&nbsp; Developed by C McFadgen</p>
+        </footer>
     </body>
-
 </html>

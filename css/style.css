@@ -12,109 +12,58 @@ body {
 }
 
 header {
-    margin: none;
     background-color: #1F3D19;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    height: 12vh;
     border-bottom: 1px #1F3D19 solid;
+    overflow: hidden;
+    padding: 1% 9%;
+
+}
+
+header a {
+    font-family: 'Open Sans', Tahoma, Sans-serif;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 125%; 
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
 .logo {
-    position: relative;
-    padding-left: 10%;
-    width: 30%;
-    max-width: 30%;
-    height: 100%;
-    padding-top: auto;
-    padding-bottom: auto;
-}
-
-.logo div {
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.logo div p{
-    font-family: 'Carter One', Arial;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 300%;
+    font-family: 'Carter One', Impact, Sans-serif;
+    font-size: 325%;
     color: #ffffff;
     font-weight: 400;
 }
 
-.logo div a{
-    text-decoration: none;
+.nav-links {
+    float: right;
+    line-height: 50px;
 }
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-}
-
-.social-media {
-    position: relative;
-    height: 50%;
-}
-
-.social-media div {
-    width: 85%;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: right;
-    display: inline-block;
-}
-
-.social-media div a {
-    font-size: 115%;
-    cursor: pointer;
-    color: #ffffff;
-    margin-left: 1%;
-}
-
-.social-media div a:hover{
+.nav-links a:hover {
     color: #53a016;
 }
-
-.nav {
-    position: relative;
-    height: 50%;
-    display: inline-block;
-}
-
-.nav div {
-    width: 85%;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    display: inline-block;
-    text-align:right;
-}
-
-.nav div a {
-    margin-left: 6%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 125%;
-}
-.nav a:hover {
-    color: #53a016;
-}
-.nav a.active {
-    color: #53a016;
+.active {
+    color: #53a016 !important;
     text-decoration: underline;
 }
+
+/* @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .nav-links {
+      float: none;
+    }
+
+} */
 
 .home-heading {
     margin: 0vh auto 0 auto;
@@ -136,7 +85,7 @@ header {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
     color: #ffffff;
     width: 80%;
     font-size: 700%;
@@ -144,11 +93,11 @@ header {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.home-subheading {
+.home-article .home-subheading {
     color: #1F3D19;
     font-size: 175%;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
     text-align: center;
 }
 
@@ -169,22 +118,22 @@ header {
 .home-article h2{
     color: #1F3D19;
     text-align: center;
-    font-size: 3em;
-    font-weight: 800;
+    font-size: 275%;
+    font-weight: 700;
     margin-bottom: 2vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
 }
 
 .home-text {
     font-weight: 500;
     margin-top: 1vh;
     font-size: 125% !important;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5em;
-    text-align: center;
+    text-align: left;
 }
 
 .home-article p a{
@@ -194,10 +143,10 @@ header {
 .home-info{
     text-align: center;
     color: #1F3D19;
-    font-size: 1.25em;
+    font-size: 150%;
     font-weight: 600;
     margin-top:3vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
 }
 
 .heading {
@@ -221,10 +170,10 @@ header {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
     color: #ffffff;
     width: 100%;
-    font-size: 6em;
+    font-size: 700%;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     font-weight: 600;
 }
@@ -235,13 +184,17 @@ header {
 }
 
 .content-full-width article {
-    font-family: 'Montserrat', Helvetica;
     background-color: #98C280;
     margin: 3vh 2% 2.5vh 0vw;
     padding: 3vh 3.5vw 3vh 3.5vw;
     overflow: auto;
     border: 1px #1F3D19 solid;
     border-radius: 4px;
+}
+
+.content-full-width p {
+    font-family: 'Montserrat', Georgia, Sans-serif;
+    font-size: 1.1em;
 }
 
 .content-full-width p:last-child {
@@ -265,37 +218,47 @@ aside article {
     border-radius: 4px;
 }
 
-aside .search {
-    text-align: center;
-    padding: 3vh 0.0vw 3vh 0.0vw;
+.side-search {
+    padding: 2vh 1vw;
+    overflow: hidden;
 }
 
-.search button {
+.side-search form {
+    height: 4vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.side-search input {
+    width: 100%;
+    float: left;
+    border: 1px #1F3D19 solid;
+    border-radius: 4px;
+    padding-left: 3%;
+    flex: 1 1 auto;
+}
+
+.side-search button {
+    margin-left: 3%;
     background: #53a016;
     color: #1F3D19;
-    border: 1px #53a016 solid;
+    border: 1px #1F3D19 solid;
     border-radius: 4px;
 }
-.search button:hover {
+.side-search button:hover {
     background: #1F3D19;
     color: #53a016;
-    border: 1px #1F3D19 solid;
-}
-
-aside article h3 {
-    color: #1F3D19;
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 2vh;
-    font-family: 'Open Sans', sans-serif;
+    border: 1px #53a016 solid;
 }
 
 aside article h4 {
     color: #1F3D19;
-    font-size: 1.3em;
+    font-size: 175%;
     font-weight: 600;
     margin-bottom: 2vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
 }
 
 aside article div {
@@ -305,31 +268,20 @@ aside article div {
 
 aside article div a {
     margin-bottom: 3vh;
-    font-size: 1em;
+    font-size: 100%;
     font-weight: 400;
     margin-bottom: 2vh;
-    font-family: 'Montserrat', Helvetica;
-}
-
-aside article p {
-    line-height: 140%;
-    margin-bottom: 3vh;
-    text-align: right;
-    font-size: 1.1em;
-    font-weight: 400;
-    margin-bottom: 2vh;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
 }
 
 .content-part-width {
     margin-right: 10%;
     float: right;
     width: 65%;
-    max-width: 65%;
 }
 
 .content-part-width article {
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     background-color: #98C280;
     margin: 3vh 0vw 2.5vh 2%;
     padding: 3.5vh 3.5vw 3.5vh 3.5vw;
@@ -341,20 +293,19 @@ aside article p {
 .content-part-width article h2 {
     color: #1F3D19;
     text-align: center;
-    font-size: 2.25em;
+    font-size: 300%;
     font-weight: 800;
     margin-bottom: 1.5vh;
     padding-bottom: 1.5vh;
-    font-family: 'Open Sans', sans-serif;
-
+    font-family: 'Open Sans', Tahoma, Sans-serif;
 }
 
 .subheading {
     color: #1F3D19;
-    font-size: 1.25em;
-    font-weight: 600;
+    font-size: 150% !important;
+    font-weight: 600 !important;
     margin-bottom: 3vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
     text-align: center;
 }
 
@@ -398,7 +349,7 @@ aside article p {
 .content-part-width p {
     line-height: 140%;
     font-size: 1.1em;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     margin-bottom: 3vh;
 }
 
@@ -420,18 +371,18 @@ aside article p {
 .content-part-width li {
     line-height: 140%;
     font-size: 1.1em;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     margin-bottom: 2.5vh;
 }
 .content-part-width li:last-child {
     font-size: 1.1em;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     margin-bottom: 1vh;
 }
 
 
 .content-part-width a {
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Helvetica, Sans-serif;
 }
 
 .table {
@@ -462,10 +413,10 @@ aside article p {
 
 .recipe .subheading {
     color: #1F3D19;
-    font-size: 1.25em;
+    font-size: 125%;
     font-weight: 600;
     margin-bottom: 3vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
     text-align: center;
 }
 
@@ -502,23 +453,23 @@ aside article p {
     font-weight: 600;
     clear:both;
     margin-bottom:3vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
 }
 
-.contact {
+.form {
     text-align: center;
 }
 
-.contact label{
+.form label{
     float: left;
     color: #1F3D19;
     font-size: 1.25em;
     font-weight: 600;
     margin-bottom: 0.5vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
 }
 
-.contact input {
+.form input {
     width: 100%;
     padding: 0.75% 1% 0.75% 1%;
     border: 1px solid #1F3D19;
@@ -526,11 +477,11 @@ aside article p {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     font-size: 1.25em;
 }
 
-.contact textarea {
+.form textarea {
     width: 100%;
     padding: 0.75% 1% 0.75% 1%;
     border: 1px solid #1F3D19;
@@ -538,44 +489,57 @@ aside article p {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 3vh;
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     font-size: 1.25em;
 }
 
-.contact button {
+.form button {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    background: #1F3D19;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
+    background: #53a016;
+    color: #1F3D19;
     border: 1px #1F3D19 solid;
     padding: 1vh 0vw 1vh 0vw;
-    width: 10vw;
+    width: 15%;
     font-size: 1.25em;
     font-weight: 600;
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;}
-.contact button:hover{
+.form button:hover{
     color: #53a016;
     background: #1F3D19;
     border: 1px #53a016 solid;
 }
-#submit-button:active{
+/* #submit-button:active{
     color: #53a016;
     background: #1F3D19;
     border: 1px #53a016 solid;
-}
+} */
 
+#contact-form p {
+    font-weight: 500;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    font-size: 125% !important;
+    font-family: 'Montserrat', Georgia, Sans-serif;
+    width: 100%;
+    line-height: 1.5em;
+    text-align: left;
+}
 #subscription-form p {
     font-weight: 500;
     margin-top: 1vh;
-    font-size: 125% !important;
-    font-family: 'Montserrat', Helvetica;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3vh;
+    font-size: 125% !important;
+    font-family: 'Montserrat', Georgia, Sans-serif;
+    width: 100%;
     line-height: 1.5em;
-    text-align: center;
+    text-align: left;
 }
 
 footer {
@@ -596,7 +560,7 @@ footer {
 }
 
 .footer-nav div a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, Sans-serif;
     text-decoration: none;
     padding: 0 0 2vh 0;
     text-align: center;
@@ -617,7 +581,7 @@ footer {
 }
 
 footer p{
-    font-family: 'Montserrat', Helvetica;
+    font-family: 'Montserrat', Georgia, Sans-serif;
     margin: 0 auto 0 auto;
     padding: 1.25% 0 1.25% 0;
     clear: both;
