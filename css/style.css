@@ -52,32 +52,20 @@ header a {
     text-decoration: underline;
 }
 
-/* @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .nav-links {
-      float: none;
-    }
-
-} */
-
 .home-heading {
-    margin: 0vh auto 0 auto;
-    text-align:center;
+    margin: 0 auto 0 auto;
+    text-align: center;
     position: relative;
     height: 100vh;
     background: #000000;
     border-bottom: 1px #1F3D19 solid;
+    width: 100%;
 }
 
 .home-heading img {
     opacity: 0.95;
     width: 100%;
-    height:100%
+    height: 100%
 }
 
 .home-heading h1 {
@@ -87,7 +75,7 @@ header a {
     transform: translate(-50%, -50%);
     font-family: 'Open Sans', Tahoma, Sans-serif;
     color: #ffffff;
-    width: 80%;
+    width: 100%;
     font-size: 700%;
     font-weight: 600;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -152,7 +140,7 @@ header a {
 .heading {
     margin: 0 auto 0 auto;
     width: 100%;
-    text-align:center;
+    text-align: center;
     position: relative;
     height: 30vh;
     background: #000000;
@@ -370,12 +358,12 @@ aside article div a {
 
 .content-part-width li {
     line-height: 140%;
-    font-size: 1.1em;
+    font-size: 110%;
     font-family: 'Montserrat', Georgia, Sans-serif;
     margin-bottom: 2.5vh;
 }
 .content-part-width li:last-child {
-    font-size: 1.1em;
+    font-size: 110%;
     font-family: 'Montserrat', Georgia, Sans-serif;
     margin-bottom: 1vh;
 }
@@ -401,7 +389,8 @@ aside article div a {
     padding-bottom: 1vh;
     padding-left: 4%;
     padding-right: 4%;
-    border-radius: 4px;  
+    border-radius: 4px; 
+    line-height: 150%;
 }
 .table td:first-child {
     width: 30%;
@@ -449,7 +438,7 @@ aside article div a {
 .article-info{
     text-align: center;
     color: #1F3D19;
-    font-size: 1.25em;
+    font-size: 125%;
     font-weight: 600;
     clear:both;
     margin-bottom:3vh;
@@ -463,7 +452,7 @@ aside article div a {
 .form label{
     float: left;
     color: #1F3D19;
-    font-size: 1.25em;
+    font-size: 125%;
     font-weight: 600;
     margin-bottom: 0.5vh;
     font-family: 'Open Sans', Tahoma, Sans-serif;
@@ -478,7 +467,7 @@ aside article div a {
     margin-top: 6px;
     margin-bottom: 16px;
     font-family: 'Montserrat', Georgia, Sans-serif;
-    font-size: 1.25em;
+    font-size: 125%;
 }
 
 .form textarea {
@@ -490,7 +479,7 @@ aside article div a {
     margin-top: 6px;
     margin-bottom: 3vh;
     font-family: 'Montserrat', Georgia, Sans-serif;
-    font-size: 1.25em;
+    font-size: 125%;
 }
 
 .form button {
@@ -499,9 +488,8 @@ aside article div a {
     background: #53a016;
     color: #1F3D19;
     border: 1px #1F3D19 solid;
-    padding: 1vh 0vw 1vh 0vw;
-    width: 15%;
-    font-size: 1.25em;
+    padding: 1vh 2% 1vh 2%;
+    font-size: 125%;
     font-weight: 600;
     text-decoration: none;
     border-radius: 4px;
@@ -526,7 +514,7 @@ aside article div a {
     font-size: 125% !important;
     font-family: 'Montserrat', Georgia, Sans-serif;
     width: 100%;
-    line-height: 1.5em;
+    line-height: 150%;
     text-align: left;
 }
 #subscription-form p {
@@ -538,7 +526,7 @@ aside article div a {
     font-size: 125% !important;
     font-family: 'Montserrat', Georgia, Sans-serif;
     width: 100%;
-    line-height: 1.5em;
+    line-height: 150%;
     text-align: left;
 }
 
@@ -566,7 +554,7 @@ footer {
     text-align: center;
     display: block;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 125%;
     font-weight: 600;
 }
 .footer-nav div a:hover {
@@ -589,5 +577,5 @@ footer p{
     text-align: center;
     border-top: 1px solid #ffffff;
     color: #ffffff;
-    font-size: 0.9em;
+    font-size: 90%;
 }

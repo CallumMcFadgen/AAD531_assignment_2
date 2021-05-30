@@ -5,27 +5,25 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     #wrapper { background-color: blue }
-    .logo div p{ font-size:250%; font-weight: 400; }
-    .nav div a { margin-left: 7%; font-weight: 600; font-size: 100%; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     #wrapper { background-color: green }
-    .logo div p{ font-size:180%; font-weight: 400; }
-    .nav div a { margin-left: 3%; font-weight: 600; font-size: 100%; }
-    .home-heading h1 { width: 80%; font-size: 600%; font-weight: 600; }
-    footer p{ max-width: 80%; font-size: 80%; }
-        
-
-
-
-
-
 
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     #wrapper { background-color: yellow }
+
+    .home-heading {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        position: relative;
+        height: 80vh;
+        background: #000000;
+        border-bottom: 1px #1F3D19 solid;
+        width: 100%;
+    }
 
     aside {
         display: none;
@@ -42,6 +40,16 @@
 @media (min-width: 496px) and (max-width: 576px) {
     #wrapper { background-color: brown }
 
+    .home-heading {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        position: relative;
+        height: 80vh;
+        background: #000000;
+        border-bottom: 1px #1F3D19 solid;
+        width: 100%;
+    }
+
     aside {
         display: none;
     }
@@ -55,6 +63,16 @@
 }
 
 @media (min-width: 395px) and (max-width: 495px) {
+    .home-heading {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        position: relative;
+        height: 60vh;
+        background: #000000;
+        border-bottom: 1px #1F3D19 solid;
+        width: 100%;
+    }
+
     .header a {
         float: none;
         display: block;
@@ -80,6 +98,17 @@
 
 @media (min-width: 295px) and  (max-width: 394px) {
     #wrapper { background-color: red }
+
+    .home-heading {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        position: relative;
+        height: 80vh;
+        background: #000000;
+        border-bottom: 1px #1F3D19 solid;
+        width: 100%;
+    }
+
     .header a {
         float: none;
         display: block;
@@ -104,6 +133,17 @@
 
 @media (max-width: 294px) {
     #wrapper { background-color: orange }
+
+    .home-heading {
+        margin: 0 auto 0 auto;
+        text-align: center;
+        position: relative;
+        height: 80vh;
+        background: #000000;
+        border-bottom: 1px #1F3D19 solid;
+        width: 100%;
+    }
+
     .header a {
         float: none;
         display: block;
